@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@media print {
+
+    #printBtnWrapper,
+    #formSection {
+        display: none;
+    }
+
+    #printarea {
+        display: block !important;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    body {
+        /*padding-top: 72px;*/
+        /*padding-bottom: 72px;*/
+        /*margin: auto;*/
+    }
+}
+
+/*common start*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background: #000;
+}
+
+.p10 {
+    padding-top: 10px;
+}
+
+.p20 {
+    padding-top: 20px;
+}
+
+.p30 {
+    padding-top: 30px;
+}
+
+.p40 {
+    padding-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+.m10 {
+    margin-top: -10px;
+}
+
+.m20 {
+    margin-top: -20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*common end*/
+body {
+    /*overflow: hidden;*/
+    height: auto;
+    font-family: lato;
+}
+
+.container {}
+
+/*input area start*/
+.formSection {
+    width: 100%;
+    max-width: 900px;
+    background: #ddd;
+    height: auto;
+    padding: 50px 20px 40px 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formBody {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBody div {
+    margin-right: 10px;
+}
+
+.formBody div:nth-child(1) {
+    flex-basis: 30%;
+}
+
+.formBody div:nth-child(2) {
+    flex-basis: 10%;
+}
+
+.formBody div:nth-child(3) {
+    flex-basis: 20%;
+}
+
+.formBody div:nth-child(4) {
+    flex-basis: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+.printBtnWrapper {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.printBtnWrapper button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    font-size: 36px;
+    background: #000000;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.printerIcon {}
+
+.inputwrapper {
+    display: block;
+    position: relative;
+}
+
+.inputwrapper label {
+    position: absolute;
+    top: -16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit,
+.inputwrapper input {
+    outline: none;
+    padding: 5px 10px;
+    border: 2px dashed #ddd;
+    font-size: 18px;
+    color: #636363;
+}
+
+.submit {
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*input area end*/
+/*print area start*/
+.printArea {
+    width: 600px;
+    height: auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.printArea .title {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    max-height: 150px;
+    margin: auto;
+    display: block;
+}
+
+.item {}
+
+.accounting {
+    text-transform: uppercase;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.accounting tr {
+    width: ;
+    display: block;
+}
+
+.accounting tr td:nth-child(1) {
+    width: 280px;
+}
+
+.accounting tfoot {
+    margin-top: 50px !important;
+    border-top: 2px dashed #ccc;
+    display: block;
+    padding-bottom: 20px;
+}
+
+table tbody tr td span::before {
+    content: '\0024';
+    display: inline-block;
+}
+
+.cash {
+    padding: 5px;
+    width: 30px;
+    float: right;
+}
+
+.cash input {
+    width: 50px;
+}
+
+/*print area end*/
+
+/*Responsive design start*/
+@media only screen and (max-width: 600px) {
+    .formBody {
+        flex-direction: column;
+    }
+
+    .formBody div {
+        margin-bottom: 30px;
+    }
+
+    .formBody div label {
+        /*top:-21px;*/
+    }
+
+    .formSection {
+        padding: 50px 0 0 0;
+        margin-top: 0;
+        margin-bottom: 200px;
+    }
+    body{
+        width: 100vw;
+    }
+    .printBtnWrapper button {
+        bottom: auto;
+        top: 350px;
+        left: 60px;
+        right: auto;
+        border-radius: 10px;
+    }
+
+}
+
+/*Responsive design end*/

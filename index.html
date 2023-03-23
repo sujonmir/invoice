@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="" type="media" href="#">
+    <title>Print Invoice</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <div id="formSection" class="formSection">
+                <form action="#" id="form" autocomplete="on">
+                    <div class="w100 formBody">
+                        <div class="inputwrapper">
+                            <label for="itemName">Coffee Name</label>
+                            <input type="text" id="itemName">
+                        </div>
+                        <div class="inputwrapper">
+                            <label for="q">Number of Coffee</label>
+                            <input type="number" id="q">
+                        </div>
+                        <div class="inputwrapper">
+                            <label for="itemPrice">Price (&dollar;)</label>
+                            <input type="text" id="itemPrice">
+                        </div>
+                        <div class="inputwarpper">
+                            <input type="submit" value="Submit" class="submit" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- print body-->
+            <div id="printarea" class="printArea">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="center">
+                    <h1 class="title">creek road</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ut quaerat voluptas!<br>
+                        <b>https://www.tesco.com/store-locator</b>
+                    </p>
+                </div>
+                <table id="accounting" class="accounting">
+                    <thead></thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr style="font-weight: bold;">
+                            <td>Total:</td>
+                            <td>&dollar;<span id="total">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Cash:</td>
+                            <td>&dollar;<span id="cash">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>change due:</td>
+                            <td>&dollar;<span id="change">00</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="center">
+                    <hr>
+                    <h2 class="title2">Club Card Today</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur. <br>
+                        Lorem, ipsum dolor.
+                    </p>
+                    <hr>
+                </div>
+                <div class="center p20">
+                    <img src="https://barcode.tec-it.com/barcode.ashx?data=90000-5000-00008%0A90000-5001-23658%0A90000-5002-47308%0A90000-5003-70958%0A90000-5004-94608%0A90000-5006-18258%0A90000-5007-41908%0A90000-5008-65558%0A90000-5009-89208%0A90000-5011-12858&code=Code128&multiplebarcodes=true&translate-esc=true" alt=""><br>
+                    <div class="m10"></div>
+                    
+                    <p class="p20">
+                        <span id="date">00/00/00</span>&nbsp;|&nbsp;<span id="time">00:00</span>&nbsp;|&nbsp;<span id="phone">0000 000 0000 0000</span>
+                    </p><br>
+                    <p>&copy; <span id="year">0000</span>, All right reserved. <a href="#" target="_blank" title="StarBucks Coffee">StarBucks Coffee</a></p>
+                    <a href="#" class="link">
+                        <img src="./images/facebook.webp" alt="Facebook" width="20" title="Facebook">
+                    </a>&nbsp;&nbsp;
+                    <a href="#" class="link">
+                        <img src="./images/github.png" alt="GitHub" width="20" title="GitHub">
+                    </a>&nbsp;&nbsp;
+                    <a href="#" class="link">
+                        <img src="./images/gmail.webp" alt="Gmail" width="20" title="Gmail">
+                    </a>&nbsp;&nbsp;
+                    <a href="#" class="link">
+                        <img src="./images/linkedin.png" alt="linkendIn" width="20" title="linkendIn">
+                    </a>&nbsp;&nbsp;
+                    <a href="#" class="link">
+                        <img src="./images/phone.png" alt="Phone Number" width="20" title="Phone Number">
+                    </a>&nbsp;&nbsp;
+                </div>
+            </div>
+            <!-- print button -->
+            <div class="printBtnWrapper" id="printBtnWrapper">
+                <button id="final">Print <span class="printerIcon">&#x1F5B6;</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
